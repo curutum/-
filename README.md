@@ -43,3 +43,43 @@
     A,B = B,A
     print("Число A: ", A)
     print("Число B: ", B)
+### Задание 6(9) 'Даны два целых числа А и В (А > B). Найти сумму квадратов всех целых чисел от А до В включительно.
+    
+    import random
+    A = random.randrange(10)
+    n = random.randrange(10) + 1
+    B = A + n 
+    print('A = ', A)
+    print('B = ', B)
+      S = 0
+       for i in range(A, B +1, 1):
+       S += i*i
+       print(i,":",i*i,":",s)
+    print("Sum of squares = ", S)
+### Задание 7(31)
+    
+    import random
+    N = random.randrange(1,1000)
+    print("N = ",N)
+    a = N
+    i = 0
+    flag = False
+    while a >= 1:
+        i += 1 
+        r = a % 10 
+        print(i," - ", r)
+        if r % 2 == 1:
+           flag = True
+           break
+        a = int(a/10)
+    print(flag)
+### Задание 7(21)
+    import random
+    N = random.randrange(2,1000)
+    print('N = ', N)
+    K = 0 
+    P = 1 
+    while P <= N :
+        P *= 3
+        K += 1 
+    print("K = 0, 3^K = 1, 3^(K-1) = 2".format(K, 3**K, 3**(K-1)))
